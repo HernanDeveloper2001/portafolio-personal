@@ -1,13 +1,28 @@
-import React from 'react'
+import { Link } from "react-router-dom"
+import "../styles/Nav.css"
+
 
 const Nav = () => {
   return (
-    // className="bg-sky-600 w-80 absolute h-screen"
-    <ul >
-      <li>Home</li>
-      <li>Habilidades</li>
-      <li>Certificados</li>
-    </ul>
+    <div className="contenedor-nav">
+      <ul className="contenedor-nav-lista">
+        <li className="lista-nav">
+          <Link 
+            className="button-nav"
+            to="/">Home</Link>
+        </li>
+        <li className="lista-nav">
+          <Link 
+            className="button-nav"
+            to="/habilidades">Habilidades</Link>
+        </li>
+        <li className="lista-nav">
+          <Link 
+            className="button-nav"
+            to="/certificados">Certificados</Link>
+        </li>
+      </ul>
+    </div>
   )
 }
 

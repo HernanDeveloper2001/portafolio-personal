@@ -1,0 +1,50 @@
+.contenedor-certificados {
+  background-color: #a87715;
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  width: 80%;
+  height: 100vh;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+} 
+
+.contenedor-certificados::-webkit-scrollbar {
+  width: 5px;
+}
+
+.titulo-certificados {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contenedor-certificados-lista {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem ;
+  gap: 2rem;
+}
+
+.lista-certificados {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #7c570c;
+  padding: 1rem;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.lista-certificados_subtitulo {
+  text-transform: uppercase;
+}
+
+.lista-certificados_link {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #7c570c;
+  padding: 5px;
+  border-radius: 5px;
+}

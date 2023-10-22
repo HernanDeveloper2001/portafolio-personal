@@ -2,14 +2,13 @@ import Home from "./components/Home"
 import Nav from "./components/Nav"
 import Habilidades from "./components/Habilidades"
 import Certificados from "./components/Certificados"
+import Root from "./routes/root"
 
 const Portafolio = () => {
   return (
     <div>
       <Nav />
-      <Home />
-      <Habilidades />
-      <Certificados />
+      <Root />
     </div>
   )
 }

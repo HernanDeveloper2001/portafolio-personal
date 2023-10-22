@@ -1,0 +1,34 @@
+.contenedor-nav {
+  position: absolute;
+  height: 100vh;
+  width: 20%;
+  background-color: #0c1319;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.contenedor-nav-lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.lista-nav {
+  list-style: none;
+}
+
+.button-nav {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.button-nav:hover {
+  border-bottom: 2px solid #fff;
+}

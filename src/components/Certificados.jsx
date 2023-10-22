@@ -1,18 +1,49 @@
-import { CERTIFICADOS } from "../data/certificados"
+import { CERTIFICADOSALURA,CERTIFICADOSFREECODECAMP } from "../data/certificados"
+import "../styles/Certificados.css"
+
 
 const Certificados = () => {
 
-  const data = CERTIFICADOS;
+  const dataAlura = CERTIFICADOSALURA;
+  const dataFreeCodeCamp = CERTIFICADOSFREECODECAMP;
 
   return (
-    <div>
-      {data.map((cursos,index) => (
-        <div key={index}>
-          <h3>{cursos.titulo}</h3>
-          <span>{cursos.name}</span>
-          <span>{`Fecha de finalización ${cursos.fecha}`}</span>
-        </div>
-      ))}
+    <div className="contenedor-certificados">
+      <h2 className="titulo-certificados">Certificados</h2>
+      <div className="contenedor-certificados-lista">
+        {dataAlura.map((cursos,index) => (
+          <div key={index} className="lista-certificados">
+            <h3 className="lista-certificados_subtitulo">{cursos.name}</h3>
+            <p className="lista-certificados_subparrafo">{cursos.titulo}</p>
+            <span className="lista-certificados_fecha">{`Fecha de finalización ${cursos.fecha}`}</span>
+            <br />
+            <a 
+              className="lista-certificados_link"
+              href={cursos.certificado} 
+              target="_blank" 
+              rel="noopener noreferrer">
+                Ver certificado
+            </a>
+          </div>
+        ))}
+      </div>
+      <div className="contenedor-certificados-lista">
+        {dataFreeCodeCamp.map((cursos,index) => (
+          <div key={index} className="lista-certificados">
+            <h3 className="lista-certificados_subtitulo">{cursos.name}</h3>
+            <p className="lista-certificados_subparrafo">{cursos.titulo}</p>
+            <span className="lista-certificados_fecha">{`Fecha de finalización ${cursos.fecha}`}</span>
+            <br />
+            <a 
+              className="lista-certificados_link"
+              href={cursos.certificado} 
+              target="_blank" 
+              rel="noopener noreferrer">
+                Ver certificado
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
 
   )
