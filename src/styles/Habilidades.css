@@ -1,6 +1,6 @@
 
 .contenedor-habilidades {
-  background-color: #a8155a;
+  background-color: #4415a8;
   font-family: "Ubuntu", sans-serif;
   color: #fff;
   width: 80%;
@@ -22,6 +22,25 @@
   font-size: 26px;
 }
 
+.html {
+  color: #ff5500;
+}
+
+.javascript {
+  color: #fff700;
+}
+
+.css {
+  color: #00a6ff;
+}
+
+.react {
+  color: #ff0000;
+}
+
+.python {
+  color: #00ffd5;
+}
 .contenedor-habilidades-lista {
   display: flex;
   font-size: 20px;

@@ -19,6 +19,11 @@ const Nav = () => {
         <li className="lista-nav">
           <Link 
             className="button-nav"
+            to="/proyectos">Proyectos</Link>
+        </li>
+        <li className="lista-nav">
+          <Link 
+            className="button-nav"
             to="/certificados">Certificados</Link>
         </li>
       </ul>

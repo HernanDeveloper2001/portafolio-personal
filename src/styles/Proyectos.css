@@ -1,5 +1,5 @@
-.contenedor-certificados {
-  background-color: #a87715;
+.contenedor-proyectos {
+  background-color: #3aa815;
   font-family: "Ubuntu", sans-serif;
   color: #fff;
   width: 80%;
@@ -8,19 +8,19 @@
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-} 
+}
 
-.contenedor-certificados::-webkit-scrollbar {
+.contenedor-proyectos::-webkit-scrollbar {
   width: 5px;
 }
 
-.titulo-certificados {
+.titulo-proyectos {
   font-size: 36px;
   font-weight: 700;
   text-align: center;
 }
 
-.contenedor-certificados-lista {
+.contenedor-proyectos-lista {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -28,24 +28,35 @@
   gap: 2rem;
 }
 
-.lista-certificados {
+.lista-proyectos {
   display: flex;
   flex-direction: column;
-  border: 1px solid #7c570c;
+  border: 1px solid #0c7c0c;
   padding: 1rem;
   align-items: center;
   border-radius: 5px;
 }
 
-.lista-certificados_subtitulo {
+.lista-proyectos_subtitulo {
   text-transform: uppercase;
 }
 
-.lista-certificados_link {
+.lista-proyectos_subparrafo {
+  text-transform: capitalize;
+}
+
+.lista-proyectos_contenedor__links {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
+  gap: 5px;
+}
+
+.lista-proyectos_link {
   text-decoration: none;
   color: #fff;
-  border: 1px solid #7c570c;
+  border: 1px solid #0c7c0c;
   padding: 5px;
   border-radius: 5px;
-  background-color: #7c570c;
+  background-color: #0c7c0c;
 }
