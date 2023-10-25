@@ -55,21 +55,6 @@
   flex-wrap: wrap;
 }
 
-.mostrar {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  background-color: #0c1319;
-}
-
-.ocultar {
-  display: none;
-}
-
-
 .lista-habilidades {
   list-style: none;
   padding: 0 2rem ;
