@@ -1,11 +1,16 @@
 import { PROYECTOSFREECODECAMP, PROYECTOSALURA } from "../data/proyectos"
 import "../styles/Proyectos.css"
-const Proyectos = () => {
+import MenuHamburgueza from "./MenuHamburgueza";
 
+const Proyectos = () => {
   const proyectosFree = PROYECTOSFREECODECAMP;
   const proyectosAlura = PROYECTOSALURA;
+
   return (
     <div className="contenedor-proyectos">
+      <div className="navBar">
+        <MenuHamburgueza />
+      </div>
       <h2 className="titulo-proyectos">Proyectos</h2>
       <div className="contenedor-proyectos-lista">
         {

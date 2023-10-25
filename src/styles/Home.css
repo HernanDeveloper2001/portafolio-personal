@@ -1,11 +1,10 @@
-
 .contenedor-home {
   background-color: #1568a8;
   font-family: "Ubuntu", sans-serif;
   color: #fff;
   width: 80%;
-  height: 100vh;
   float: right;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
@@ -15,6 +14,7 @@
 .titulo-home {
   font-size: 46px;
   font-weight: 700;
+  text-transform: capitalize;
 }
 
 .contenedor-home_imagen {
@@ -33,11 +33,22 @@
 .parrafo-home {
   text-align: center;
   font-size: 26px;
+  padding: 2rem;
+}
+
+.navBar {
+  display: none;
+  position: sticky;
+  right: 0;
+  top: 0;
+  align-self: flex-end;
+  width: auto;
 }
 
 .contenedor-home_lista {
   display: flex;
   font-size: 20px;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -50,8 +61,74 @@
   text-decoration: none;
   padding: 0 2rem ;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .button-home:hover {
   border-bottom: 2px solid #fff;
+}
+
+@media screen and (max-width: 768px) and (orientation:landscape){
+  .contenedor-home {
+    width: 100%;
+    height: auto;
+  }
+
+  .titulo-home {
+    text-align: center;
+  }
+
+  .navBar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .parrafo-home {
+    text-align: center;
+    padding:0 10px ;
+  }
+
+  .contenedor-home_lista {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .button-home {
+    padding: 1rem 0;
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .contenedor-home {
+    width: 100%;
+  }
+
+  .titulo-home {
+    text-align: center;
+  }
+
+  .navBar {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .parrafo-home {
+    text-align: center;
+    padding:0 10px ;
+  }
+
+  .contenedor-home_lista {
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+  }
+
+  .button-home {
+    padding: 0 1rem ;
+  }
 }

@@ -1,6 +1,6 @@
 import { CERTIFICADOSALURA,CERTIFICADOSFREECODECAMP } from "../data/certificados"
 import "../styles/Certificados.css"
-
+import MenuHamburgueza from "./MenuHamburgueza"
 
 const Certificados = () => {
 
@@ -9,6 +9,9 @@ const Certificados = () => {
 
   return (
     <div className="contenedor-certificados">
+      <div className="navBar">
+        <MenuHamburgueza />
+      </div>
       <h2 className="titulo-certificados">Certificados</h2>
       <div className="contenedor-certificados-lista">
         {dataAlura.map((cursos,index) => (
