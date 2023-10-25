@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import "../styles/Nav.css"
 import { menuDataContext } from "../Context/MenuContext"
-import { useContext, useState } from "react"
+import { useContext } from "react"
 
 const Nav = () => {
 

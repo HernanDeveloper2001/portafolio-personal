@@ -8,7 +8,8 @@ const Proyectos = () => {
 
   return (
     <div className="contenedor-proyectos">
-      <div className="navBar">
+      <div 
+      className="navBar">
         <MenuHamburgueza />
       </div>
       <h2 className="titulo-proyectos">Proyectos</h2>

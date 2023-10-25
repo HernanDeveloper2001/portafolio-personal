@@ -77,10 +77,22 @@
   text-align: center;
 }
 
+.navBar {
+  display: none;
+  position: sticky;
+  right: 0;
+  top: 0;
+  align-self: flex-end;
+  width: auto;
+}
 
 @media screen and (max-width:768px) {
   .contenedor-proyectos {
     width: 100%;
+  }
+  .navBar {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -89,4 +101,8 @@
     width: 100%;
   }
 
+  .navBar {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
