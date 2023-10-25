@@ -22,6 +22,13 @@
   font-size: 26px;
 }
 
+.lista-habilidades {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .html {
   color: #ff5500;
 }
@@ -44,9 +51,61 @@
 .contenedor-habilidades-lista {
   display: flex;
   font-size: 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
+
+.mostrar {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #0c1319;
+}
+
+.ocultar {
+  display: none;
+}
+
 
 .lista-habilidades {
   list-style: none;
   padding: 0 2rem ;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-habilidades {
+    width: 100%;
+    height: auto;
+  }
+
+  .contenedor-habilidades-lista {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .lista-habilidades {
+    padding: 1rem 0;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px) {
+
+  .contenedor-habilidades {
+    width: 100%;
+  }
+
+  .contenedor-habilidades-lista {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 0;
+  }
+
+  .lista-habilidades {
+    padding: 1rem 0;
+  }
 }

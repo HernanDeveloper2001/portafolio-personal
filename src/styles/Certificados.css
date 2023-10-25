@@ -28,6 +28,7 @@
   gap: 2rem;
 }
 
+
 .lista-certificados {
   display: flex;
   flex-direction: column;
@@ -35,6 +36,7 @@
   padding: 1rem;
   align-items: center;
   border-radius: 5px;
+  flex-shrink: 1;
 }
 
 .lista-certificados_subtitulo {
@@ -48,4 +50,16 @@
   padding: 5px;
   border-radius: 5px;
   background-color: #7c570c;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-certificados {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+  .contenedor-certificados {
+    width: 100%;
+  }
 }

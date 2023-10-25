@@ -1,11 +1,15 @@
 import imagen from "../assets/imgs/hernan.jpg"
 import "../styles/Home.css"
 import { AiFillGithub, AiFillLinkedin,AiOutlineFileText,AiOutlineMail } from 'react-icons/ai';
+import MenuHamburgueza from "./MenuHamburgueza";
 
 const Home = () => {
 
   return (
     <div className="contenedor-home">
+      <div className="navBar">
+        <MenuHamburgueza />
+      </div>
       <h1 className="titulo-home">Bienvenido a mi portafolio</h1>
       <div className="contenedor-home_imagen">
         <img 
@@ -24,7 +28,7 @@ const Home = () => {
             rel="noopener noreferrer"
             className="button-home">
             <i>
-              <AiFillGithub />
+              <AiFillGithub size={40}/>
             </i>
             Github
           </a>
@@ -36,7 +40,7 @@ const Home = () => {
             rel="noopener noreferrer"
             className="button-home">
             <i>
-              <AiFillLinkedin />
+              <AiFillLinkedin size={40}/>
             </i>
             Linkedin
           </a>
@@ -48,7 +52,7 @@ const Home = () => {
             rel="noopener noreferrer"
             className="button-home">
             <i>
-              <AiOutlineFileText />
+              <AiOutlineFileText size={40}/>
             </i>
             Currículum
           </a>
@@ -60,7 +64,7 @@ const Home = () => {
             rel="noopener noreferrer"
             className="button-home">
             <i>
-              <AiOutlineMail />
+              <AiOutlineMail size={40}/>
             </i>
             hernandariocalvo@gmail.com
           </a>
