@@ -1,4 +1,4 @@
-import "../styles/cv.css";
+import "../styles/Cv.css";
 import curriculum from "../assets/imgs/curriculum.png";
 import MenuHamburgueza from "./MenuHamburgueza";
 const Cv = () => {
