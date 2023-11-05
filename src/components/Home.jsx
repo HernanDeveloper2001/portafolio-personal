@@ -2,6 +2,7 @@ import imagen from "../assets/imgs/hernan.jpg"
 import "../styles/Home.css"
 import { AiFillGithub, AiFillLinkedin,AiOutlineFileText,AiOutlineMail } from 'react-icons/ai';
 import MenuHamburgueza from "./MenuHamburgueza";
+import { Link } from "react-router-dom";
 
 const Home = () => {
 
@@ -46,16 +47,14 @@ const Home = () => {
           </a>
         </li>
         <li className="lista-home">
-          <a 
-            href=""
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="button-home">
+          <Link 
+            className="button-home"
+            to="/curriculum">
             <i>
               <AiOutlineFileText size={40}/>
             </i>
-            Currículum
-          </a>
+            Curriculum
+          </Link>
         </li>
         <li className="lista-home">
           <a 
