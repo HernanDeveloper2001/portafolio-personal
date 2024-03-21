@@ -7,20 +7,14 @@ const Nav = () => {
 
   const {
     openMenu,
+    menu,
     onCloseMenu,
   } = useContext(menuDataContext)
 
 
   return (
       <div 
-        className={`
-          ${openMenu && window.innerWidth <= 768 
-          ? "mostrar" 
-          : openMenu && window.innerWidth <= 1024 
-          ? "mostrar" 
-          : openMenu === false && window.innerWidth >= 1025
-          ? "contenedor-nav" 
-          : "ocultar"}`}>
+        className={`openMenu ${openMenu && window.innerWidth <= 1025 ? "mostrar" : "contenedor-nav"}`}>
         <ul className="contenedor-nav-lista">
           <li className="lista-nav">
             <Link 
@@ -42,7 +36,7 @@ const Nav = () => {
           </li>
           <li className="lista-nav">
             <Link 
-              onClick={onCloseMenu}
+              onClick={menu}
               className="button-nav"
               to="/certificados">Certificados</Link>
           </li>

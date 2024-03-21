@@ -5,7 +5,14 @@ export const menuDataContext = createContext()
 const MenuContext = ({children}) => {
 
   const [ openMenu, setOpenMenu ] = useState(false);
+  const [ active, setActive] = useState(false);
 
+  // color del menu
+  
+
+
+
+  // menu hamburguesa
   function onOpenMenu(){
     setOpenMenu(!openMenu)
   }
